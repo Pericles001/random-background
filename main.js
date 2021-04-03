@@ -4,6 +4,9 @@ const bgEl = document.querySelector('section');
 
 button.addEventListener('click', ()=>{
     let color= '#';
-const random = Math.random();
+
+color+= Math.random().toString(16).slice(2,8);
+
+bgEl.style.backgroundColor=color;
 
 })
